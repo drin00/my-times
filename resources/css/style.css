@@ -1,73 +1,111 @@
-section.header{
+body{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  display: inline-flex;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  display: inline-flex;
-  border: 1px solid blue;
-  height: 60px;
-  align-items: center;
-  vertical-align: top;
-  flex-shrink: 0;
-  flex-wrap: nowrap;
+  border: 1px solid red;
+  width: 100%;
+  position: fixed;
+  background: white;
+  opacity: 100%;
+  z-index: 2;
+  top:0;
+  margin: 0;
 }
 
-section.head1 p{
-  margin-left: 10px;
+span{
+  display: inline-block;
 }
-section.head1 img{
-  margin-left: 30px;
+
+div.head1{
+  align-items: center;
+  display: flex;
+  border: 1px solid blue;
+  padding-left: 30px;
+  width: 75%;
+}
+
+div.head1 p{
+  margin-left: 10px;
+  color: MediumAquamarine;
+}
+
+div.head2{
+  align-self: center;
+  border: 1px solid green;
+  margin-left: 10px;
+  margin-right: 30px;
 }
 
 nav{
-  display:flex;
-  justify-content: space-between;
-  width:250px;
-  flex-wrap: wrap;
-}
-span{
-  display: inline-block;
-  border: 1px solid green;
-}
-
-section.head1{
-  width: 58%;
-  justify-content: flex-start;
-  flex-grow: 1;
-}
-section.head2{
-  border: 1px solid red;
-  flex-shrink: 0;
-  flex-wrap: wrap;
-  flex-grow: 0;
-}
-
-.logo{
-  color: MediumAquamarine;
-}
-main{
   display: flex;
-  float: left;
-  border-top: 1px solid black;
-  flex-shrink
+  width: 250px;
+  justify-content: space-between;
+}
+
+main{
+  position: absolute;
+  margin-top: 70px;
+  display: flex;
 }
 
 section.column{
-  border: 1px solid black;
-}
-
-.column{
-  display:flex;
+  display: flex;
   flex-direction: column;
+  margin: 0;
+  border: 1px solid black;
 }
 
 .column.large {
   width: 630px;
+  margin-right: 15px;
 }
 
 .column.medium {
   width: 300px;
+  border: 3px solid black;
+  margin-right: 15px;
 }
 
 .column.small {
   width: 240px;
+}
+
+div.mainstory{
+  background-image: url("../images/img-story-main.png");
+  background-size: cover;
+  font-size: 40px;
+}
+
+div.story2{
+  background-image: url("../images/img-story-2.png");
+}
+
+div.story3{
+  background-image: url("../images/img-story-3.png");
+}
+
+div.story1{
+  background-image: url("../images/img-story-1.png");
+}
+
+.newsbites{
+  border: 1px solid black;
+}
+
+main p{
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+.headline{
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
 }
